@@ -1,38 +1,122 @@
-.App {
-  text-align: center;
+
+/* open-sans-regular - cyrillic_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Muller';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/MullerLight.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Muller';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/MullerBold.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Muller';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/MullerMedium.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Muller';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/MullerRegular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
-.App-link {
-  color: #61dafb;
+.html {
+	background-color: #afacac;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.window {
+	font-family: 'Muller';
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: #e9e8e8;
 }
+
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin: auto;
+	padding: 0;
+	padding: 30px;
+	margin: 30px;
+	background-color: #afacac;
+	border-radius: 15px;
+}
+
+.header {
+	margin: 0;
+	margin-bottom: 20px;
+}
+
+.btn {
+		border: none;
+    color: rgb(0, 0, 0);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+		line-height: 1;
+		font-weight: 500;
+		border-radius: 5px;
+		background-color: #ffffff;
+}
+.btn:hover {
+	background-color: #4CAF50;
+	color: white;
+}
+
+.myTable {
+	margin: auto;
+	margin-top: 50px;
+	margin-bottom: 60px;
+	width: 90%; 
+	border: 2px solid black; /* Рамка вокруг таблицы */
+	border-bottom: none; /* Убираем линию снизу */
+	border-right: none; /* Убираем линию снизу */
+ }
+ TD, TH {
+	padding: 10px; /* Поля вокруг содержимого ячеек */
+ }
+ TH {
+	text-align: center; /* Выравнивание по левому краю */
+	background: rgba(0, 0, 0, 0.71); /* Цвет фона */
+	color: white; /* Цвет текста */
+	border: 1px solid rgb(0, 0, 0); /* Рамка вокруг ячеек */
+	font-weight: 600;
+	font-size: 22px;
+	line-height: 1.5;
+ }
+ TD {
+	text-align: center; /* Выравнивание по левому краю */
+	border-bottom: 1px solid black; /* Линия снизу */
+	border-right: 1px solid black;;
+	height: 30px;
+	font-weight: 500;
+	font-size: 18px;
+ }
+
+ .green-item {
+	background-color: #4CAF50;
+ }
+
+ .red-item {
+	background-color: #dd2b2b;
+ }
