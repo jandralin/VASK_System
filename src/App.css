@@ -32,10 +32,6 @@
   src: url('../fonts/MullerRegular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
-.html {
-	background-color: #afacac;
-}
-
 .window {
 	font-family: 'Muller';
 	margin: auto;
@@ -44,7 +40,7 @@
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	background-color: #e9e8e8;
+	background-color: #E5E3E4;
 }
 
 .container {
@@ -57,7 +53,7 @@
 	padding: 0;
 	padding: 30px;
 	margin: 30px;
-	background-color: #afacac;
+	background-color: #BBC6C8;
 	border-radius: 15px;
 }
 
@@ -66,40 +62,50 @@
 	margin-bottom: 20px;
 }
 
+.info {
+	text-align: left;
+	font-size: 16px;
+	line-height: 1;
+	font-weight: 400;
+	margin-bottom: 20px;
+	background-color: #E5E3E4;
+	padding: 16px 16px 0px 16px;
+	border-radius: 15px;
+}
+
 .btn {
 		border: none;
     color: rgb(0, 0, 0);
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 20px;
 		line-height: 1;
-		font-weight: 500;
+		font-weight: 600;
 		border-radius: 5px;
-		background-color: #ffffff;
+		background-color: #7f8889;
 }
 .btn:hover {
-	background-color: #4CAF50;
+	background-color: #469597;
 	color: white;
 }
 
 .myTable {
 	margin: auto;
-	margin-top: 50px;
+	margin-top: 20px;
 	margin-bottom: 60px;
 	width: 90%; 
-	border: 2px solid black; /* Рамка вокруг таблицы */
+	border: 3px solid #131410; /* Рамка вокруг таблицы */
 	border-bottom: none; /* Убираем линию снизу */
-	border-right: none; /* Убираем линию снизу */
  }
  TD, TH {
 	padding: 10px; /* Поля вокруг содержимого ячеек */
  }
  TH {
 	text-align: center; /* Выравнивание по левому краю */
-	background: rgba(0, 0, 0, 0.71); /* Цвет фона */
+	background: #9c4a1abb; /* Цвет фона */
 	color: white; /* Цвет текста */
-	border: 1px solid rgb(0, 0, 0); /* Рамка вокруг ячеек */
+	border: 1px solid #131410; /* Рамка вокруг ячеек */
 	font-weight: 600;
 	font-size: 22px;
 	line-height: 1.5;
@@ -114,9 +120,9 @@
  }
 
  .green-item {
-	background-color: #4CAF50;
+	background-color: #87C159;
  }
 
  .red-item {
-	background-color: #dd2b2b;
+	background-color: #F34C3F;
  }
