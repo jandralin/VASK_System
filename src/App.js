@@ -9,7 +9,7 @@ const App = observer(() => {
 	const [data, setData] = useState("");
 	const [status, setStatus] = useState("Соединение закрыто");
 	const [res, setRes] = useState("");
-	
+
 	const socket = useRef();
 	const host = '172.20.10.2'
 	const port = 8889
@@ -81,6 +81,7 @@ const App = observer(() => {
 						</button>
 					
 					</div>
+					{!!data &&
 					<table className="myTable">
 						<thead>
 							<tr>
@@ -93,6 +94,7 @@ const App = observer(() => {
 							{res}
 						</tbody>
 					</table>
+					}
 				</div>
 		</div>
 	);
