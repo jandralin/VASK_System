@@ -96,14 +96,13 @@
 	margin-bottom: 60px;
 	width: 90%; 
 	border: 3px solid #131410; /* Рамка вокруг таблицы */
-	border-bottom: none; /* Убираем линию снизу */
  }
  TD, TH {
 	padding: 10px; /* Поля вокруг содержимого ячеек */
  }
  TH {
 	text-align: center; /* Выравнивание по левому краю */
-	background: #9c4a1abb; /* Цвет фона */
+	background: #3f5456; /* Цвет фона */
 	color: white; /* Цвет текста */
 	border: 1px solid #131410; /* Рамка вокруг ячеек */
 	font-weight: 600;
@@ -120,9 +119,9 @@
  }
 
  .green-item {
-	background-color: #87C159;
+	background-color: #7eb253;
  }
 
  .red-item {
-	background-color: #F34C3F;
+	background-color: #d64136;
  }

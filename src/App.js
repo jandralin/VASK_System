@@ -11,7 +11,7 @@ const App = observer(() => {
 	const [res, setRes] = useState("");
 
 	const socket = useRef();
-	const host = '172.20.10.2'
+	const host = '192.168.255.108'
 	const port = 8889
 
 	useEffect(() => {
@@ -68,15 +68,12 @@ const App = observer(() => {
 					<div className="container">
 						<h1 className="header">{status}</h1>
 						<div className="info">
-						<p className="info-item">{`connection ID: ${data?.connectionID}`}</p>
-						<p className="info-item">{`event: ${data?.event}`}</p>
-						<p className="info-item">{`status: ${data?.status}`}</p>
-						<p className="info-item">{`version: ${data?.version}`}</p>
+						<p className="info-item">{`connection IP: ${host}`}</p>
+						<p className="info-item">{`port: ${port}`}</p>
 						</div>
 						<button className="btn" onClick={() => {
 							socket.current.close();
 							setIsPaused(!isPaused)
-							console.log(isPaused)
 						}}>{!isPaused ? 'Остановить соединение' : 'Открыть соединение'}
 						</button>
 					
